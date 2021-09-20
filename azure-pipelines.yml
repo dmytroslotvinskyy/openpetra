@@ -1,8 +1,10 @@
 jobs:
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
+- job: Work
+  steps:
+  - script: echo Hello, world!
+    displayName: 'Run a one-line script'
+  - task: Bash@3
+  - script: |
       # Write your commands here
       
       echo 'Hello world'
