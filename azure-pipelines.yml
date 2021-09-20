@@ -9,9 +9,6 @@ parameters:
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
-
 jobs:
 - job: Work
   steps:
