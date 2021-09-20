@@ -1,11 +1,6 @@
 # When manually running the pipeline, you can select whether it
 # succeeds or fails.
 
-
-
-trigger:
-- main
-
 pool:
   vmImage: ubuntu-latest
 
