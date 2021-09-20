@@ -1,3 +1,5 @@
+pool: { vmImage: ubuntu-latest }
+
 steps:
-- script: date /t
-  displayName: Get the date
+- checkout: none
+- bash: echo "Hello World!"
