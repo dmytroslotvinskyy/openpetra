@@ -1,11 +1,8 @@
 jobs:
 - job: Work
-  steps:
-  - script: echo Hello, world!
-    displayName: 'Run a one-line script'
-  - task: Bash@3
-  - script: |
-      # Write your commands here
+ - task: CmdLine@2
+  inputs:
+    script: |
+      ls
       
-      echo 'Hello world'
-
+      echo Hello world
