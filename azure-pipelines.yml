@@ -1,8 +1,12 @@
-jobs:
-- job: Work
- - task: CmdLine@2
-  inputs:
-    script: |
-      ls
-      
-      echo Hello world
+steps:
+- script: date /t
+  displayName: Get the date
+- script: dir
+  workingDirectory: $(Agent.BuildDirectory)
+  displayName: List contents of a folder
+- script: |
+    set MYVAR=foo
+    set
+  displayName: Set a variable and then display all
+  env:
+    aVarFromYaml: someValue
