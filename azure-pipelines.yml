@@ -1,12 +1,9 @@
-# When manually running the pipeline, you can select whether it
-# succeeds or fails.
-
-pool:
-  vmImage: ubuntu-latest
-
 jobs:
-- job: Work
-  steps:
-  - script: echo Hello, world!
-    displayName: 'Run a one-line script'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'Hello world'
 
