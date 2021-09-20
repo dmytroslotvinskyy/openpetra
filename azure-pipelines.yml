@@ -1,4 +1,5 @@
 steps:
+- script: echo Hello World
 - script: date /t
   displayName: Get the date
 - script: dir
