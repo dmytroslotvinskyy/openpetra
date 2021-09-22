@@ -25,5 +25,6 @@ steps:
     script: 'Write-Host "Deploy Activity: $(deployActivity)"'
 
 - task: PowerShell@2
-- script: mkdir build
-  displayName: 'Run a build script'
+  inputs:
+    targetType: 'inline'
+    script: 'echo HelloWorld; sleep (50)'
