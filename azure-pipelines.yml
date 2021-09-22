@@ -6,6 +6,10 @@
 trigger:
 - master
 
+pool:
+  name: Default
+  demands:
+   - agent.name -equals privateVMs
 steps:
 
     
