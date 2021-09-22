@@ -25,6 +25,5 @@ steps:
     script: 'Write-Host "Deploy Activity: $(deployActivity)"'
 
 - task: PowerShell@2
-- script: |
-    mkdir build
+- script: mkdir build
   displayName: 'Run a build script'
